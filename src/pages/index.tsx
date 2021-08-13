@@ -54,7 +54,6 @@ const IndexPage = () => (
       ready code; working with in-house qa engineers; or managing a project
       handover; I’ve always been eager to learn more.
     </Para>
-    <Social />
   </Layout>
 );
 

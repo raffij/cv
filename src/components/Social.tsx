@@ -1,12 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
-import tw from "twin.macro";
+import tw, { styled } from "twin.macro";
 
 const List = tw.ul`mb-6 md:mb-8 divide-x flex flex-wrap`;
 const ListItem = tw.li`px-2 first-of-type:pl-0 md:px-4`;
 const Link2 = tw.a`md:hover:underline inline-flex`;
 
-const StyledLink = tw(Link)`md:hover:underline`;
+const StyledLink = styled(Link)`
+  &[aria-current] {
+    color: #275875;
+  }
+  ${tw`md:hover:underline`}
+`;
 
 const ExternalLink = () => (
   <svg
