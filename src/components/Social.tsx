@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import tw from "twin.macro";
 
-const List = tw.ul`mb-8 divide-x flex flex-wrap`;
+const List = tw.ul`mb-6 md:mb-8 divide-x flex flex-wrap`;
 const ListItem = tw.li`px-2 first-of-type:pl-0 md:px-4`;
 const Link2 = tw.a`md:hover:underline inline-flex`;
 
