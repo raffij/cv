@@ -33,6 +33,7 @@
   "devDependencies": {
     "@types/react-helmet": "^6.1.2",
     "gatsby-plugin-cname": "^1.0.0",
+    "gatsby-plugin-remove-generator": "^1.1.0",
     "gatsby-plugin-typescript": "^3.11.0",
     "gh-pages": "^3.2.3",
     "twin.macro": "^2.6.2"

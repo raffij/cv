@@ -1,5 +1,14 @@
 {
   "editor.quickSuggestions": {
     "strings": true
+  },
+  "workbench.colorCustomizations": {
+    "[Glass UI]": {
+      "editorHoverWidget.background": "#FFF",
+      "editorHoverWidget.foreground": "#6a7473",
+      "editorSuggestWidget.background": "#FFF",
+      "editorSuggestWidget.foreground": "#6a7473",
+      "editor.wordHighlightBackground": "#eee"
+    }
   }
 }

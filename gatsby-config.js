@@ -8,6 +8,7 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-cname",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-remove-generator",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
