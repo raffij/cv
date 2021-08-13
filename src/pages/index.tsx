@@ -1,22 +1,16 @@
 import React from "react";
-import Layout from "./../components/Layout";
 import tw from "twin.macro";
-import Logo from "../images/giraffi-logo.svg";
 
-const Header = tw.div`mb-8`;
+import Layout from "../components/Layout";
+import Social from "../components/social";
+
 const Para = tw.p`my-4 text-lg max-w-2xl`;
 const LargePara = tw.p`my-4 text-2xl max-w-2xl`;
-const List = tw.ul`divide-x`;
-const ListItem = tw.li``;
-const Link = tw.a`md:hover:underline`;
 
 const IndexPage = () => (
   <Layout>
-    <Header>
-      <img src={Logo} alt="Giraffi logo" width={160} />
-    </Header>
     <LargePara>
-      I'm Raffi, a lead product developer based in London work
+      I'm Raffi Jacobs, a lead React product developer based in the UK
     </LargePara>
     <Para>
       Over the last 10 years I’ve taken an agile approach to building digital
@@ -60,17 +54,7 @@ const IndexPage = () => (
       ready code; working with in-house qa engineers; or managing a project
       handover; I’ve always been eager to learn more.
     </Para>
-    <Para>You can find me at:</Para>
-    <List>
-      <ListItem>
-        <Link href="https://github.com/raffij">GitHub</Link>
-      </ListItem>
-      <ListItem>
-        <Link href="https://www.linkedin.com/in/raffi-jacobs-7413701/">
-          LinkedIn
-        </Link>
-      </ListItem>
-    </List>
+    <Social includeLabel />
   </Layout>
 );
 
