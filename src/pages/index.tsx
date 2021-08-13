@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 
 import Layout from "../components/Layout";
-import Social from "../components/social";
+import Social from "../components/Social";
 
 const Para = tw.p`my-4 text-lg max-w-2xl`;
 const LargePara = tw.p`my-4 text-2xl max-w-2xl`;

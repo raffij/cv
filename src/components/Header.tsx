@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import { Link } from "gatsby";
 
-import Social from "../components/social";
+import Social from "../components/Social";
 
 import LogoSrc from "../images/giraffi-logo.svg";
 
