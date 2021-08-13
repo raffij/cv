@@ -2,15 +2,11 @@ import React from "react";
 import { Link } from "gatsby";
 import tw from "twin.macro";
 
-const List = tw.ul`mb-8 divide-x flex`;
-const ListItem = tw.li`px-4 first:pl-0`;
+const List = tw.ul`mb-8 divide-x flex flex-wrap`;
+const ListItem = tw.li`px-2 first-of-type:pl-0 md:px-4`;
 const Link2 = tw.a`md:hover:underline inline-flex`;
 
 const StyledLink = tw(Link)`md:hover:underline`;
-
-interface SocialProps {
-  includeLabel?: boolean;
-}
 
 const ExternalLink = () => (
   <svg
@@ -29,7 +25,7 @@ const ExternalLink = () => (
   </svg>
 );
 
-const Social: React.FC<SocialProps> = ({ includeLabel = false }) => (
+const Social = () => (
   <List>
     <ListItem>
       <StyledLink to="/">About</StyledLink>
@@ -38,19 +34,15 @@ const Social: React.FC<SocialProps> = ({ includeLabel = false }) => (
       <StyledLink to="/work">Work</StyledLink>
     </ListItem>
     <ListItem>
-      <Link2 href="https://github.com/raffij">
-        GitHub <ExternalLink />
-      </Link2>
+      <Link2 href="https://github.com/raffij">GitHub</Link2>
     </ListItem>
     <ListItem>
       <Link2 href="https://www.linkedin.com/in/raffi-jacobs-7413701/">
-        LinkedIn <ExternalLink />
+        LinkedIn
       </Link2>
     </ListItem>
     <ListItem>
-      <Link2 href="mailto:raffij@gmail.com">
-        Email <ExternalLink />
-      </Link2>
+      <Link2 href="mailto:raffij@gmail.com">Email</Link2>
     </ListItem>
   </List>
 );
