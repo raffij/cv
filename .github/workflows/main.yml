@@ -10,7 +10,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: c-hive/gha-yarn-cache@v2
+
+      - name: Cache ./public
+        id: cache-folder-public
+        uses: actions/cache@v1
+        with:
+          path: public
+          key: v4-${{ runner.os }}-public-${{ github.sha }}
+          restore-keys: |
+            v4-${{ runner.os }}-public-
+
+      - name: Cache ./.cache
+        id: cache-folder-cache
+        uses: actions/cache@v1
+        with:
+          path: .cache
+          key: v4-${{ runner.os }}-cache-${{ github.sha }}
+          restore-keys: |
+            v4-${{ runner.os }}-cache-
+
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
