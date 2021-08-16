@@ -1,5 +1,6 @@
 import React from "react";
 import tw, { GlobalStyles } from "twin.macro";
+import { Helmet } from "react-helmet";
 
 import Header from "./Header";
 import Seo from "./Seo";
@@ -10,6 +11,12 @@ const Footer = tw.footer`my-8`;
 
 const Layout = ({ children, ...rest }) => (
   <div {...rest}>
+    <Helmet
+      htmlAttributes={{
+        lang: "en",
+      }}
+    />
+
     <GlobalStyles />
     <Seo />
     <Container>
