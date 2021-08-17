@@ -1,6 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import { Helmet } from "react-helmet";
+import { PageProps } from "gatsby";
 
 import Layout from "@components/Layout";
 
@@ -10,8 +11,8 @@ const H2 = tw.h2`my-4 text-2xl`;
 const H3 = tw.h3`my-4 text-xl font-medium`;
 const Small = tw.small`block text-sm font-medium text-gray-600`;
 
-const WorkPage = () => (
-  <Layout>
+const WorkPage: React.FC<PageProps> = ({ location }) => (
+  <Layout location={location}>
     <Helmet title="Work | Giraffi" />
     <H2>
       Made by Many — Senior Full Stack Developer

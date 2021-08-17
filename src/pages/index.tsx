@@ -1,13 +1,16 @@
 import React from "react";
 import tw from "twin.macro";
+import type { PageProps } from "gatsby";
 
 import Layout from "@components/Layout";
 
 const Para = tw.p`my-4 text-lg max-w-2xl`;
 const LargePara = tw.p`my-4 text-xl md:text-2xl max-w-2xl`;
 
-const IndexPage = () => (
-  <Layout>
+export type LocationProps = Pick<PageProps, "location">;
+
+const IndexPage: React.FC<PageProps> = ({ location }) => (
+  <Layout location={location}>
     <LargePara>Welcome to Giraffi Development</LargePara>
     <Para>
       I'm Raffi Jacobs and over the last 10 years I’ve taken an agile approach

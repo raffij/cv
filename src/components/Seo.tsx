@@ -1,9 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import { LocationProps } from "@pages";
 
-const SEO = () => {
-  const { site } = useStaticQuery(graphql`
+interface SeoProps extends LocationProps {}
+
+const SEO: React.FC<SeoProps> = ({ location }) => {
+  const {
+    site: { siteMetadata: seo },
+  } = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -16,8 +21,7 @@ const SEO = () => {
     }
   `);
 
-  const seo = site.siteMetadata;
-  const canonical = `${seo.siteUrl}/${window.location.pathname}`;
+  const canonical = `${seo.siteUrl}${location.pathname}`;
 
   return (
     <Helmet>
