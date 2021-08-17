@@ -39,6 +39,11 @@ const Social = () => (
       <StyledLink to="/work">Work</StyledLink>
     </ListItem>
     <ListItem>
+      <Link2 href="/Raffi Jacobs CV.pdf" download>
+        CV
+      </Link2>
+    </ListItem>
+    <ListItem>
       <Link2 href="https://github.com/raffij">GitHub</Link2>
     </ListItem>
     <ListItem>
