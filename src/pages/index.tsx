@@ -1,20 +1,17 @@
 import React from "react";
 import tw from "twin.macro";
 
-import Layout from "../components/Layout";
-import Social from "../components/Social";
+import Layout from "@components/Layout";
 
 const Para = tw.p`my-4 text-lg max-w-2xl`;
 const LargePara = tw.p`my-4 text-xl md:text-2xl max-w-2xl`;
 
 const IndexPage = () => (
   <Layout>
-    <LargePara>
-      I'm Raffi Jacobs, a lead React product developer based in the UK
-    </LargePara>
+    <LargePara>Welcome to Giraffi Development</LargePara>
     <Para>
-      Over the last 10 years I’ve taken an agile approach to building digital
-      products in small cross discipline teams.
+      I'm Raffi Jacobs and over the last 10 years I’ve taken an agile approach
+      to building digital products in small cross discipline teams.
     </Para>
     <Para>
       I take a highly contextual approach to technology - focussing on the real
@@ -54,6 +51,7 @@ const IndexPage = () => (
       ready code; working with in-house qa engineers; or managing a project
       handover; I’ve always been eager to learn more.
     </Para>
+    <Para>I'm looking for work, so if you want help you can find me here</Para>
   </Layout>
 );
 

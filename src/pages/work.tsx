@@ -2,17 +2,21 @@ import React from "react";
 import tw from "twin.macro";
 import { Helmet } from "react-helmet";
 
-import Layout from "../components/Layout";
+import Layout from "@components/Layout";
 
 const Para = tw.p`my-4 text-lg max-w-2xl`;
 const List = tw.ul`my-4 text-lg max-w-2xl`;
 const H2 = tw.h2`my-4 text-2xl`;
 const H3 = tw.h3`my-4 text-xl font-medium`;
+const Small = tw.small`block text-sm font-medium text-gray-600`;
 
 const WorkPage = () => (
   <Layout>
     <Helmet title="Work | Giraffi" />
-    <H2>Made by Many</H2>
+    <H2>
+      Made by Many — Senior Full Stack Developer
+      <Small>APR 2013 - MAY 2021</Small>
+    </H2>
     <H3>Multinational apprenticeship startup:</H3>
     <Para>
       Alongside the client’s principle developer, I co-lead a mixed ability
@@ -79,6 +83,30 @@ const WorkPage = () => (
       based approach inspired by medium.com. I also engaged with the community
       managing github issues, attended client meetings on improvements and
       managed prs from external contributors.
+    </Para>
+    <H2>
+      Freelance — Ruby on Rails Developer
+      <Small>NOV 2011 - APR 2013</Small>
+    </H2>
+    <Para>Ruby on Rails contractor working on a variety of projects.</Para>
+    <H2>
+      Freelance — Web Developer
+      <Small>SEPT 2002 - NOV 2011</Small>
+    </H2>
+    <Para>
+      Wordpress, PHP, Flash / Actionscript, HTML, CSS Worked with small
+      businesses tailoring open source solutions to their needs. Built a pre
+      YouTube video sharing solution in Flash / Actionscript backed by a Perl
+      api and custom video encoding backend.
+    </Para>
+    <H2>
+      Gilmore House Associates — Microsoft Web Developer
+      <Small>JUNE 2002 - 2005</Small>
+    </H2>
+    <Para>
+      Automated an existing manual HR 360 Degree Appraisal process using a
+      combination of Microsoft Technologies to capture feedback online and
+      generate reports for delivery to clients.
     </Para>
   </Layout>
 );
