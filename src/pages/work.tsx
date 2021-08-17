@@ -29,8 +29,7 @@ const WorkPage: React.FC<PageProps> = ({ location }) => (
       stakeholders and a product manager to shape a growing site that was both
       performant for the end user, but also enjoyable to develop for. I also led
       technical walkthroughs during our end of sprint demos and was a key part
-      of helping manage client expectations helping to prioritise and deliver a
-      scaled back, but impressive mvp.
+      of helping manage client expectations.
     </Para>
     <H3>World Economic Forum:</H3>
     <Para>

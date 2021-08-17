@@ -11,10 +11,10 @@ export type LocationProps = Pick<PageProps, "location">;
 
 const IndexPage: React.FC<PageProps> = ({ location }) => (
   <Layout location={location}>
-    <LargePara>Welcome to Giraffi Development</LargePara>
+    <LargePara>I'm Raffi Jacobs</LargePara>
     <Para>
-      I'm Raffi Jacobs and over the last 10 years I’ve taken an agile approach
-      to building digital products in small cross discipline teams.
+      Over the last 10 years I’ve taken an agile approach to building digital
+      products in small cross discipline teams.
     </Para>
     <Para>
       I take a highly contextual approach to technology - focussing on the real
