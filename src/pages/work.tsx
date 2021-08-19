@@ -5,17 +5,17 @@ import { PageProps } from "gatsby";
 
 import Layout from "@components/Layout";
 
-const Para = tw.p`my-4 text-lg max-w-2xl`;
-const List = tw.ul`my-4 text-lg max-w-2xl`;
-const H2 = tw.h2`my-4 text-2xl`;
-const H3 = tw.h3`my-4 text-xl font-medium`;
+const Para = tw.p`my-4 md:text-lg max-w-2xl`;
+const List = tw.ul`my-4 md:text-lg max-w-2xl`;
+const H2 = tw.h2`my-4 text-xl md:text-2xl`;
+const H3 = tw.h3`my-4 text-lg md:text-xl font-medium`;
 const Small = tw.small`block text-sm font-medium text-gray-600`;
 
 const WorkPage: React.FC<PageProps> = ({ location }) => (
   <Layout location={location}>
     <Helmet title="Work | Giraffi" />
     <H2>
-      Made by Many — Senior Full Stack Developer
+      Made by Many — Senior Developer
       <Small>APR 2013 - MAY 2021</Small>
     </H2>
     <H3>Multinational apprenticeship startup:</H3>
@@ -74,7 +74,14 @@ const WorkPage: React.FC<PageProps> = ({ location }) => (
       Lions Archive allowing the business to better monetize previous award
       entries.
     </Para>
-    <H3>Sir Trevor JS (https://github.com/madebymany/sir-trevor-js):</H3>
+    <H3>
+      Sir Trevor JS:{" "}
+      <Small>
+        <a href="https://github.com/madebymany/sir-trevor-js">
+          github.com/madebymany/sir-trevor-js
+        </a>
+      </Small>
+    </H3>
     <Para>
       Lead development over a 4 year period on an open source web-based content
       editor used on client projects and other websites around the world. During

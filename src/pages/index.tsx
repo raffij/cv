@@ -4,8 +4,8 @@ import type { PageProps } from "gatsby";
 
 import Layout from "@components/Layout";
 
-const Para = tw.p`my-4 text-lg max-w-2xl`;
-const LargePara = tw.p`my-4 text-xl md:text-2xl max-w-2xl`;
+export const Para = tw.p`my-4 text-lg max-w-2xl`;
+export const LargePara = tw.p`my-4 text-xl md:text-2xl max-w-2xl`;
 
 export type LocationProps = Pick<PageProps, "location">;
 
@@ -54,7 +54,7 @@ const IndexPage: React.FC<PageProps> = ({ location }) => (
       ready code; working with in-house qa engineers; or managing a project
       handover; I’ve always been eager to learn more.
     </Para>
-    <Para>I'm looking for work, so if you want help you can find me here</Para>
+    <Para>I'm looking for work, get in touch.</Para>
   </Layout>
 );
 
