@@ -15,6 +15,27 @@ const WorkPage: React.FC<PageProps> = ({ location }) => (
   <Layout location={location}>
     <Helmet title="Work | Giraffi" />
     <H2>
+      Zoopla - React Native Developer (Contract)
+      <Small>MAR 2022 - DEC 2022</Small>
+    </H2>
+    <Para>
+      Worked within the Mobile App team pre-launch to help accelerate the rollout 
+      and building of new features once launched. As a multidisciplinary team we 
+      worked closely together utilising agile methodologies balancing user feedback, 
+      backed by data, with the needs of the business. This allowed us to release new 
+      features frequently whilst maintaining a solid foundation through the use of 
+      automated testing and direct collaboration with our quality engineer.
+    </Para>
+    <H2>
+      IDEO - Software Engineer (Contract)
+      <Small>SEPT 2021 - FEB 2022</Small>
+    </H2>
+    <Para>
+      Working as part of a multidisciplinary team, I was embedded within the 
+      client organisation to build confidence in a new business process through 
+      a user-centered design approach.
+    </Para>
+    <H2>
       Made by Many — Senior Developer
       <Small>APR 2013 - MAY 2021</Small>
     </H2>
